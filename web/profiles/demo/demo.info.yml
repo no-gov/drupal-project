@@ -1,0 +1,7 @@
+name: Demo
+type: profile
+description: Demo profile for Info site
+core: 8.x
+
+dependencies:
+  - nogov_site_info
