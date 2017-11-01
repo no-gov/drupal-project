@@ -1,0 +1,10 @@
+name: Site Theme
+type: theme
+description: Custom theme for this project
+package: noGov
+core: 8.x
+libraries:
+  - site_theme/global-styling
+ 
+base theme: nogov_info_theme
+
