@@ -13,9 +13,6 @@
  * @see system_install()
  */
 function demo_install() {
-  // First, do everything that is done in the standard profile.
-  include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
-  standard_install();
-
-  // Add code here to make nodes, terms, etc.
+  \Drupal::service('theme_handler')->install(['site_theme']);
+  \Drupal::configFactory()->getEditable('system.theme')->set('default', 'site_theme')->save();
 }
