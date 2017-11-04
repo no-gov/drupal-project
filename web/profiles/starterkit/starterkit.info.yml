@@ -1,0 +1,7 @@
+name: Starterkit
+type: profile
+description: Starterkit profile for Info site
+core: 8.x
+
+dependencies:
+  - nogov_site_info

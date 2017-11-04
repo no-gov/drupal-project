@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall hooks for the Demo install profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function starterkit_install() {
+  \Drupal::service('theme_handler')->install(['site_theme']);
+  \Drupal::configFactory()->getEditable('system.theme')->set('default', 'site_theme')->save();
+}
